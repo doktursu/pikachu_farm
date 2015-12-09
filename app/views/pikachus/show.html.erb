@@ -1,0 +1,6 @@
+<img class="farm" src="http://harkeyresearch.blog.com/wp-content/blogs.dir/00/02/36/83/2368304/files/chicken-farm/051.jpg">
+
+<div class="pikachu" style="animation: nudge <%= rand(2..20) %>s cubic-bezier(0.5, <%= rand(0.31..0.49) %>, 0.3, <%= rand(0.4..1.0) %>) <%= rand(-10..0) %>s infinite alternate;top:<%= rand(-10..10)%>px;left:<%= rand(0..20)%>px;transform: scaleX(-1);">
+  <%= image_tag @pikachu.image, size: "#{@pikachu.size * 100 + 20}x#{@pikachu.size * 100 + 20}" %>
+  <p class="name" style="color:<%= @pikachu.color %>"><%= @pikachu.name %></p>
+</div>

@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body {
+  font-family: sans-serif;
+ }
+
+ div.pikachu {
+  display: inline-block;
+  position: absolute;
+ }
+
+/* div.pikachu:nth-of-type(n+1) {
+  animation: nudge 5s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite alternate;
+ }
+
+ div.pikachu:nth-of-type(n+2) {
+  animation: nudge 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite alternate;
+ }
+
+ div.pikachu:nth-of-type(n+3) {
+  animation: nudge 20s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite alternate;
+ }
+
+ div.pikachu:nth-of-type(n+4) {
+  animation: nudge 2s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite alternate;
+ }
+
+ div.pikachu:nth-of-type(n+4) {
+  animation: nudge 2s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite alternate;
+ }*/
+
+
+p.name {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  font-style: bold;
+}
+
+a {
+  background-color: #fff;
+}
+
+a.btn,
+.name a {
+  text-decoration: none;
+}
+
+.btn {
+  border: 2px solid #00008B;
+  border-radius: 5px;
+  background-color: #FFD700;
+  cursor: pointer;
+  padding: 3px 5px;
+  font-size: 12px;
+  margin: 0;
+}
+
+.btn-right {
+  float:right;
+}
+
+.btn:hover {
+  border: 2px solid #FFD700;
+  background-color: #00008B;
+  padding: 4px 6px;
+}
+
+.btn:active {
+  background-color: #FF1493;
+  padding: 6px;
+}
+
+img.farm {
+  z-index: -1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(600px, 0px);
+  }
+
+  20% {
+    transform: translate(0px, 220px);
+  }
+  
+  50% {
+    transform: translate(850px, 180px);
+  }
+
+  55% {
+    transform: translate(750px, -30px);
+  }
+
+  60% {
+    transform: translate(5px, -160px);
+  }
+
+  70% {
+    transform: translate(300px, -200px);
+  }
+  
+  77% {
+    transform: translate(-50px, -100px);
+  }
+}
